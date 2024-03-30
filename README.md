@@ -1,7 +1,7 @@
 # Survival Analysis with TCGA in R
 This repository contains one R script (survival.R) that performs survival analysis on breast cancer patients with high and low expression of SCYL3 gene. 
 
-# Study Data
+## Study Data
 TCGA-BRCA from GDC portal using TCGAbiolinks R package
 
 Goal: To understand whether high expression of SCYL3 influence the prognosis in breast cancer patients.
@@ -15,8 +15,8 @@ Goal: To understand whether high expression of SCYL3 influence the prognosis in 
 •	survival (v3.2-13): To perform survival analysis and plot survival curves
 •	SummarizedExperiment (v1.24.0): To get gene expression data in a summarized experiment object
 •	tidyverse (v1.3.1): To manipulate data
-•	DESeq2 (v1.32.0): to obtain DeSeq data set
-•	ggplot: For visula representation
+•	DESeq2 (v1.32.0): To obtain DeSeq data set
+•	ggplot: For visual representation
 
 ##### 3 main things for survival analysis
 1. Time-to-event: time till an event happens 
@@ -38,7 +38,8 @@ Goal: To understand whether high expression of SCYL3 influence the prognosis in 
 - 0.95LCL is the lower bound of the 95% confidence interval.
 - 0.95UCL is the upper bound of the 95% confidence interval.
 
-The fit object result is visualized in the Kaplan-Meier curve. The risk table below the Kaplan-Meier curve represents the number of patients at risk of an event (death) at specific time points during the study. 
+The fit object result is visualized in the Kaplan-Meier curve. 
+The risk table below the Kaplan-Meier curve represents the number of patients at risk of an event (death) at specific time points during the study. 
 It provides information on the number of patients remaining in each group at different time intervals, indicating how many patients are still being monitored for survival outcomes.
 This table helps track the progression of patients in the study and provides insights into the sample size at various time points.
 So, after 1000 days 7 patients out of 10 with high expressing SCYL3 gene experienced death and only 3 were being monitored for study and 2 patients out of 10 died and 8 patients were still alive and being monitored. 
