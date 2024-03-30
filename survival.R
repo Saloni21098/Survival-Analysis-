@@ -121,7 +121,7 @@ ggsurvplot(fit, data = brca_scyl3, pval = T, risk.table = T)+
 fit2 <- survdiff(Surv(overall_survival, status) ~ strata, data = brca_rad52)
 fit2
 # If the observed and the expected value are different, then it can be concluded that there is a difference in survival pattern of
-# two groups of cancer patients having high and low RAD52 gene expression.
+# two groups of cancer patients having high and low SCYL3 gene expression.
   
 
   
